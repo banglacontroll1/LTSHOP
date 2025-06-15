@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTSHOP | Lo shop digitale </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">LT<span>SHOP</span></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Prodotti</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <div class="search-box">
+                    <input type="text" placeholder="Cerca...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Benvenuto in LTSHOP</h1>
+                <p>Scopri le migliori offerte e prodotti di qualità</p>
+                <a href="#products" class="btn">Scopri ora</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="Prodotti in vetrina" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">I Nostri Prodotti</h2>
+            <div class="product-filter">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="electronics">Elettronica</button>
+                <button class="filter-btn" data-filter="clothing">Abbigliamento</button>
+                <button class="filter-btn" data-filter="home">Casa</button>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Smartphone">
+                        <div class="product-overlay">
+                            <button class="quick-view">Anteprima</button>
+                            <button class="add-to-cart">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 pro</h3>
+                        <div class="price">€599.99</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(673)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Maglietta">
+                        <div class="product-overlay">
+                            <button class="quick-view">Anteprima</button>
+                            <button class="add-to-cart">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Maglietta Elegante</h3>
+                        <div class="price">€29.99 <span class="old-price">€49.99</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(87)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="home">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Lampada">
+                        <div class="product-overlay">
+                            <button class="quick-view">Anteprima</button>
+                            <button class="add-to-cart">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Lampada Moderna</h3>
+                        <div class="price">€89.99</div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(56)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Cuffie">
+                        <div class="product-overlay">
+                            <button class="quick-view">Anteprima</button>
+                            <button class="add-to-cart">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cuffie Wireless</h3>
+                        <div class="price">€129.99 <span class="old-price">€159.99</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(167)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300" alt="Pc fisso">
+                        <div class="product-overlay">
+                            <button class="quick-view">Anteprima</button>
+                            <button class="add-to-cart">Aggiungi al carrello</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pc fisso</h3>
+                        <div class="price">€899<span class="old-price">€959</span></div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i> 
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(212)</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            
+
+            <div class="load-more">
+                <button class="btn">Carica Altri Prodotti</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/500x400" alt="Il nostro team">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Chi Siamo</h2>
+                <p>LTSHOP è un e-commerce leader nel settore della vendita al dettaglio online. Fondata nel 2020, la
+                    nostra missione è fornire prodotti di alta qualità a prezzi competitivi con un servizio clienti
+                    eccezionale.</p>
+                <p>Con oltre 500k milione di clienti soddisfatti in tutta Italia, ci impegniamo a offrire un'esperienza di
+                    shopping senza pari.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Anni di Esperienza</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1k+</h3>
+                        <p>Prodotti</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>500k+</h3>
+                        <p>Clienti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">RECENSIONI DAI NOSTRI MIGLIORI CLIENTI</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Ho acquistato diversi prodotti e sono sempre rimasto soddisfatto. Spero che sia sempre 
+                            così il loro servizio."</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/80x80" alt="Cliente 1">
+                            <div>
+                                <h4>Mirko Mattei</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Ottima selezione di prodotti e prezzi competitivi. Consiglio LTSHOP a tutti i miei amici
+                            e familiari!"</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/80x80" alt="Cliente 2">
+                            <div>
+                                <h4>Laura Bianchi</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Sito super ottimizzato pronto con le cose più valutate e comprate da più persone. Consiglio prefettamente."</p>
+                        <div class="client-info">
+                            <img src="https://via.placeholder.com/80x80" alt="Cliente 3">
+                            <div>
+                                <h4>Giovanni Verdi</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contattaci</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Unknow</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>...........</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>rikimoto17@gmail.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Oggetto">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Il tuo messaggio" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Iscriviti alla nostra Newsletter</h3>
+                <p>Ricevi offerte esclusive e aggiornamenti sui nuovi prodotti</p>
+                <form>
+                    <input type="email" placeholder="La tua email" required>
+                    <button type="submit" class="btn">Iscriviti</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LTSHOP</h3>
+                    <p>Il tuo negozio digitale preferito per acquisti online sicuri e convenienti.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Link Veloci</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Prodotti</a></li>
+                        <li><a href="#about">Chi Siamo</a></li>
+                        <li><a href="#contact">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#">Il mio account</a></li>
+                        <li><a href="#">Ordini</a></li>
+                        <li><a href="#">Lista desideri</a></li>
+                        <li><a href="#">Checkout</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Informazioni</h3>
+                    <ul>
+                        <li><a href="#">Termini e condizioni</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Spedizioni</a></li>
+                        <li><a href="#">Resi e rimborsi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LTSHOP. Tutti i diritti riservati.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Il Tuo Carrello</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically -->
+            <div class="empty-cart">
+                <p>Il tuo carrello è vuoto</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Totale:</span>
+                <span class="total-price">€0.00</span>
+            </div>
+            <button class="btn checkout-btn">Procedi al Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Quick View Modal -->
+    <div class="quick-view-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <!-- Content will be added dynamically -->
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
